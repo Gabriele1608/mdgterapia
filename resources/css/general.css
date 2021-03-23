@@ -1,0 +1,184 @@
+.section-header {
+    background: url('/storage/img/header1.jpg');
+    background-position: center;
+
+}
+
+.section-header .cita {
+
+
+
+    mix-blend-mode: multiply;
+    background-color: white;
+    height: 100vh;
+    position: relative;
+
+}
+
+ .primera-frase {
+
+   margin-top: 4rem;
+
+} 
+
+
+
+
+.foto img {
+
+
+    width: 100%;
+    clip-path: circle(69.2% at 6% 8%);
+
+    shape-outside: circle(69.2% at 6% 8%);
+}
+
+
+.servicios img {
+
+    height: 15rem;
+}
+
+.formulario input::placeholder {
+    font-size: 14px;
+    color:  rgb(161, 155, 155);
+}
+
+.formulario textarea::placeholder {
+    font-size: 14px;
+    color: rgb(161, 155, 155);
+}
+
+#loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: no-repeat rgb(249, 249, 249);
+    background-attachment: fixed;
+    background-position: center;
+
+    opacity: .8;
+
+}
+
+.image-loader {
+
+    height: 202px;
+    width: 145px;
+}
+
+.loader {
+
+    animation-name: slide-right;
+    -webkit-animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+}
+
+.logo {
+
+    margin-right: 10%;
+}
+
+.mdg {
+    position: absolute;
+    height: 56px;
+    width: 56px;
+    left: 10px;
+    bottom: 4px;
+}
+
+
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+
+@media screen and (max-width:200px) {
+
+    .citation {
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:535px) {
+
+    .primera-frase {
+        margin-top: 10rem;
+
+    }
+
+}
+
+
+@media screen and (max-width:769px) {
+
+    .mdg {
+        display: none;
+
+    }
+
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .foto img {
+
+        width: 61%;
+        margin-bottom: 4rem;
+
+    }
+
+}
+
+@media screen and (max-width:357px) {
+    .logotipo .logo {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:294px) {
+    .logotipo {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:295px) {
+    .contenedor-conectarse {
+
+        flex-direction: column;
+
+    }
+
+}
